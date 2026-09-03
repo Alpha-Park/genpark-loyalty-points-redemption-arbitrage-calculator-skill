@@ -1,0 +1,39 @@
+{
+  "name": "genpark-loyalty-points-redemption-arbitrage-calculator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic loyalty points redemption arbitrage calculator maximizing cents-per-point cash value and tier progression.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "smile-io",
+    "loyaltylion",
+    "loyalty-points",
+    "rewards-arbitrage",
+    "customer-loyalty"
+  ],
+  "inputs": {
+    "points_balance": {
+      "type": "integer"
+    },
+    "cart_total_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "arbitrage_calc_id": {
+      "type": "string"
+    },
+    "optimal_redemption_tier": {
+      "type": "string"
+    },
+    "discount_value_usd": {
+      "type": "number"
+    },
+    "redemption_voucher_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
